@@ -1,0 +1,28 @@
+2021-06-16T09:05:01.705Z [jfrou] [INFO ] [46128c6f7d50e077] [bootstrap.go:76               ] [main                ] - Router (jfrou) service initialization started. Version: 7.19.4-1 Revision: a650c79d3af810e94b7a9f7f2d843c669475b700 PID: 3301 Home: /opt/jfrog/artifactory
+2021-06-16T09:05:01.706Z [jfrou] [INFO ] [46128c6f7d50e077] [bootstrap.go:79               ] [main                ] - JFrog Router IP: 172.17.0.2
+2021-06-16T09:05:06.761Z [jfrou] [INFO ] [46128c6f7d50e077] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 5 seconds with 2m0s timeout
+2021-06-16T09:05:12.008Z [jfrou] [INFO ] [46128c6f7d50e077] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 10 seconds with 2m0s timeout
+2021-06-16T09:05:17.072Z [jfrou] [INFO ] [46128c6f7d50e077] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 15 seconds with 2m0s timeout
+2021-06-16T09:05:22.388Z [jfrou] [INFO ] [46128c6f7d50e077] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 20 seconds with 2m0s timeout
+2021-06-16T09:05:27.581Z [jfrou] [INFO ] [46128c6f7d50e077] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 25 seconds with 2m0s timeout
+2021-06-16T09:05:31.836Z [jfrou] [INFO ] [46128c6f7d50e077] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 30 seconds with 2m0s timeout
+2021-06-16T09:05:37.088Z [jfrou] [INFO ] [46128c6f7d50e077] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 35 seconds with 2m0s timeout
+2021-06-16T09:05:46.974Z [jfrou] [INFO ] [46128c6f7d50e077] [security_keys.go:163          ] [main                ] - Cluster join: Join key is missing. Pending for 45 seconds with 2m0s timeout
+2021-06-16T09:05:52.179Z [jfrou] [INFO ] [46128c6f7d50e077] [security_keys.go:163          ] [main                ] - Cluster join: Join key is missing. Pending for 50 seconds with 2m0s timeout
+2021-06-16T09:05:57.280Z [jfrou] [INFO ] [46128c6f7d50e077] [bootstrap.go:192              ] [main                ] - System configuration encryption report:
+shared.newrelic.licenseKey: does not exist in the config file
+shared.security.joinKeyFile: file '/opt/jfrog/artifactory/var/etc/security/join.key' - already encrypted
+2021-06-16T09:05:57.285Z [jfrou] [INFO ] [46128c6f7d50e077] [bootstrap.go:84               ] [main                ] - JFrog Router Service ID: jfrou@01f8a13vh571fjns2thfm5cwkc
+2021-06-16T09:05:57.286Z [jfrou] [INFO ] [46128c6f7d50e077] [bootstrap.go:85               ] [main                ] - JFrog Router Node ID: 2f8187288e76
+2021-06-16T09:05:57.488Z [jfrou] [INFO ] [46128c6f7d50e077] [http_client_holder.go:155     ] [main                ] - System cert pool contents were loaded as trusted CAs for TLS communication
+2021-06-16T09:05:57.708Z [jfrou] [INFO ] [46128c6f7d50e077] [config_holder.go:107          ] [main                ] - Configuration update detected
+2021-06-16T09:06:05.832Z [jfrou] [INFO ] [46128c6f7d50e077] [join_executor.go:116          ] [main                ] - Cluster join: Trying to rejoin the cluster
+2021-06-16T09:06:06.972Z [jfrou] [INFO ] [46128c6f7d50e077] [join_executor.go:205          ] [main                ] - Cluster join: Successfully joined the cluster
+2021-06-16T09:06:06.978Z [jfrou] [INFO ] [46128c6f7d50e077] [http_client_holder.go:155     ] [main                ] - System cert pool contents were loaded as trusted CAs for TLS communication
+2021-06-16T09:06:06.984Z [jfrou] [INFO ] [46128c6f7d50e077] [http_client_holder.go:175     ] [main                ] - Following certificates were successfully loaded as trusted CAs for TLS communication:
+[/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt]
+2021-06-16T09:06:07.054Z [jfrou] [INFO ] [46128c6f7d50e077] [main.go:47                    ] [main                ] - Router (jfrou) service initialization completed in 65.382 seconds. Listening on port: 8082
+2021-06-16T09:06:57.511Z [jfrou] [INFO ] [29cade8844454e8e] [local_topology.go:258         ] [main                ] - 
+################################################################
+###   All services started successfully in 115.839 seconds   ###
+################################################################

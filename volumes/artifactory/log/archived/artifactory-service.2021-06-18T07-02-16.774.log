@@ -1,0 +1,44 @@
+2021-06-17T08:06:32.093Z [jfrt ] [INFO ] [f5c481c7c70099ec] [aseBundleCleanupServiceImpl:84] [art-exec-7          ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T08:06:32.096Z [jfrt ] [INFO ] [f5c481c7c70099ec] [aseBundleCleanupServiceImpl:90] [art-exec-7          ] - Finished incomplete Release Bundles cleanup
+2021-06-17T09:06:32.062Z [jfrt ] [INFO ] [8bf6881207b1b81e] [aseBundleCleanupServiceImpl:84] [art-exec-3          ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T09:06:32.067Z [jfrt ] [INFO ] [8bf6881207b1b81e] [aseBundleCleanupServiceImpl:90] [art-exec-3          ] - Finished incomplete Release Bundles cleanup
+2021-06-17T09:06:35.597Z [jfrt ] [INFO ] [353aaaa1edf2b9d1] [adsFolderCleanupServiceImpl:52] [art-exec-6          ] - Starting docker temp folder cleanup
+2021-06-17T09:06:35.599Z [jfrt ] [INFO ] [353aaaa1edf2b9d1] [adsFolderCleanupServiceImpl:54] [art-exec-6          ] - Docker temp folder cleanup finished, time took: 2 millis
+2021-06-17T10:06:32.065Z [jfrt ] [INFO ] [217a6a0ff34305fd] [aseBundleCleanupServiceImpl:84] [art-exec-5          ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T10:06:32.066Z [jfrt ] [INFO ] [217a6a0ff34305fd] [aseBundleCleanupServiceImpl:90] [art-exec-5          ] - Finished incomplete Release Bundles cleanup
+2021-06-17T11:06:32.064Z [jfrt ] [INFO ] [c4844e22f1bf66a4] [aseBundleCleanupServiceImpl:84] [art-exec-1          ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T11:06:32.068Z [jfrt ] [INFO ] [c4844e22f1bf66a4] [aseBundleCleanupServiceImpl:90] [art-exec-1          ] - Finished incomplete Release Bundles cleanup
+2021-06-17T11:07:06.331Z [jfrt ] [INFO ] [4d2b26e53d839749] [a.e.EventsLogCleanUpService:69] [art-exec-11         ] - Starting cleanup of old events from event log
+2021-06-17T11:07:06.397Z [jfrt ] [INFO ] [4d2b26e53d839749] [.e.EventsLogCleanUpService:105] [art-exec-11         ] - Cleanup of old events from event log finished
+2021-06-17T12:00:00.005Z [jfrt ] [INFO ] [2a3e0a8ab0c9bb84] [.s.d.b.s.BinaryServiceImpl:670] [art-exec-11         ] - Triggering Garbage Collection
+2021-06-17T12:00:00.009Z [jfrt ] [INFO ] [2a3e0a8ab0c9bb84] [.s.d.b.s.g.GarbageCollector:66] [art-exec-11         ] - Starting GC strategy 'TRASH_AND_BINARIES'
+2021-06-17T12:00:00.013Z [jfrt ] [INFO ] [2a3e0a8ab0c9bb84] [.s.d.b.s.g.GarbageCollector:68] [art-exec-11         ] - Finished GC Strategy 'TRASH_AND_BINARIES'
+2021-06-17T12:06:32.070Z [jfrt ] [INFO ] [40907aceadd8752d] [aseBundleCleanupServiceImpl:84] [art-exec-6          ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T12:06:32.072Z [jfrt ] [INFO ] [40907aceadd8752d] [aseBundleCleanupServiceImpl:90] [art-exec-6          ] - Finished incomplete Release Bundles cleanup
+2021-06-17T13:06:32.072Z [jfrt ] [INFO ] [a70717ff6e586bf7] [aseBundleCleanupServiceImpl:84] [art-exec-12         ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T13:06:32.074Z [jfrt ] [INFO ] [a70717ff6e586bf7] [aseBundleCleanupServiceImpl:90] [art-exec-12         ] - Finished incomplete Release Bundles cleanup
+2021-06-17T14:06:32.066Z [jfrt ] [INFO ] [4cabc67c6fc967ee] [aseBundleCleanupServiceImpl:84] [art-exec-10         ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T14:06:32.070Z [jfrt ] [INFO ] [4cabc67c6fc967ee] [aseBundleCleanupServiceImpl:90] [art-exec-10         ] - Finished incomplete Release Bundles cleanup
+2021-06-17T15:06:32.063Z [jfrt ] [INFO ] [28502c4129c164c0] [aseBundleCleanupServiceImpl:84] [art-exec-8          ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T15:06:32.065Z [jfrt ] [INFO ] [28502c4129c164c0] [aseBundleCleanupServiceImpl:90] [art-exec-8          ] - Finished incomplete Release Bundles cleanup
+2021-06-17T16:56:34.021Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:32] [Stream_1623834389706] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2021-06-17T16:56:35.190Z [jfrt ] [INFO ] [1d43ba223835222e] [.s.d.b.s.BinaryServiceImpl:670] [art-exec-3          ] - Triggering Garbage Collection
+2021-06-17T16:56:35.316Z [jfrt ] [INFO ] [1d43ba223835222e] [.s.d.b.s.g.GarbageCollector:66] [art-exec-3          ] - Starting GC strategy 'TRASH_AND_BINARIES'
+2021-06-17T16:56:35.340Z [jfrt ] [INFO ] [1d43ba223835222e] [.s.d.b.s.g.GarbageCollector:68] [art-exec-3          ] - Finished GC Strategy 'TRASH_AND_BINARIES'
+2021-06-17T16:56:35.522Z [jfrt ] [INFO ] [                ] [ectedEntitiesStreamObserver:35] [Stream_1623834396186] - publishing full invalidation and attempting to resubscribe to affected permissions changes
+2021-06-17T16:56:37.521Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:32] [Stream_1623834493213] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2021-06-17T17:06:32.066Z [jfrt ] [INFO ] [179cd1f455fcfc5d] [aseBundleCleanupServiceImpl:84] [art-exec-8          ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T17:06:32.069Z [jfrt ] [INFO ] [179cd1f455fcfc5d] [aseBundleCleanupServiceImpl:90] [art-exec-8          ] - Finished incomplete Release Bundles cleanup
+2021-06-17T18:06:32.065Z [jfrt ] [INFO ] [15e7cafe5822f385] [aseBundleCleanupServiceImpl:84] [art-exec-6          ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T18:06:32.068Z [jfrt ] [INFO ] [15e7cafe5822f385] [aseBundleCleanupServiceImpl:90] [art-exec-6          ] - Finished incomplete Release Bundles cleanup
+2021-06-17T19:05:23.393Z [jfrt ] [INFO ] [                ] [ectedEntitiesStreamObserver:35] [Stream_1623834396186] - publishing full invalidation and attempting to resubscribe to affected permissions changes
+2021-06-17T19:05:25.379Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:32] [Stream_1623834493213] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2021-06-17T19:06:32.062Z [jfrt ] [INFO ] [22dd5ae98783558d] [aseBundleCleanupServiceImpl:84] [art-exec-4          ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T19:06:32.066Z [jfrt ] [INFO ] [22dd5ae98783558d] [aseBundleCleanupServiceImpl:90] [art-exec-4          ] - Finished incomplete Release Bundles cleanup
+2021-06-17T20:00:00.002Z [jfrt ] [INFO ] [2c6958796da82017] [.s.d.b.s.BinaryServiceImpl:670] [art-exec-7          ] - Triggering Garbage Collection
+2021-06-17T20:00:00.003Z [jfrt ] [INFO ] [2c6958796da82017] [.s.d.b.s.g.GarbageCollector:66] [art-exec-7          ] - Starting GC strategy 'TRASH_AND_BINARIES'
+2021-06-17T20:00:00.004Z [jfrt ] [INFO ] [2c6958796da82017] [.s.d.b.s.g.GarbageCollector:68] [art-exec-7          ] - Finished GC Strategy 'TRASH_AND_BINARIES'
+2021-06-17T20:06:32.065Z [jfrt ] [INFO ] [febc08c195fe01c0] [aseBundleCleanupServiceImpl:84] [art-exec-8          ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T20:06:32.065Z [jfrt ] [INFO ] [febc08c195fe01c0] [aseBundleCleanupServiceImpl:90] [art-exec-8          ] - Finished incomplete Release Bundles cleanup
+2021-06-17T21:06:32.065Z [jfrt ] [INFO ] [6f9aa676dc0d1492] [aseBundleCleanupServiceImpl:84] [art-exec-7          ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T21:06:32.066Z [jfrt ] [INFO ] [6f9aa676dc0d1492] [aseBundleCleanupServiceImpl:90] [art-exec-7          ] - Finished incomplete Release Bundles cleanup
