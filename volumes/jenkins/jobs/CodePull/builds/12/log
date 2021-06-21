@@ -1,0 +1,111 @@
+Started by user [8mha:////4MWYJwfFx+s0zfNNEPdJuuRkgztrYMBicomnzH+CvCP/AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9gsS8lEQACjKVYMAAAAA=[0mpanda
+Running as SYSTEM
+Building remotely on [8mha:////4PiyVaQ/1tauKaXiRUfwU3DUbJ0Zmsh3HR2ZeawHp05PAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/eCcxLJUAE32xgfEAAAA[0mSlave (dockerslave) in workspace /home/workspace/CodePull
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/workspace/CodePull/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/AndrzejGRU/panda_application.git # timeout=10
+Fetching upstream changes from https://github.com/AndrzejGRU/panda_application.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+ > git fetch --tags --progress -- https://github.com/AndrzejGRU/panda_application.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/seleniumgrid^{commit} # timeout=10
+Checking out Revision 698ef94969b571714b739b6387a30fe639dd1414 (refs/remotes/origin/seleniumgrid)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 698ef94969b571714b739b6387a30fe639dd1414 # timeout=10
+Commit message: "z seleniumtest"
+ > git rev-list --no-walk e3bee09c02614cfd31c597818228546bd29b917a # timeout=10
+[CodePull] $ /home/tools/hudson.tasks.Maven_MavenInstallation/m3/bin/mvn clean install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< pl.pandait:panda >--------------------------
+[INFO] Building panda 0.0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4PRCpn6XcV9g+oAJChoZw9qLtPSpd8uqSEtYylNrqQRqAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ panda ---
+[INFO] Deleting /home/workspace/CodePull/target
+[INFO] 
+[8mha:////4PRCpn6XcV9g+oAJChoZw9qLtPSpd8uqSEtYylNrqQRqAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ panda ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[8mha:////4PRCpn6XcV9g+oAJChoZw9qLtPSpd8uqSEtYylNrqQRqAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ panda ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/workspace/CodePull/target/classes
+[INFO] -------------------------------------------------------------
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[3,29] package org.junit.jupiter.api does not exist
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[4,29] package org.junit.jupiter.api does not exist
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[5,29] package org.junit.jupiter.api does not exist
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[11,45] package org.springframework.boot.test.context does not exist
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[14,24] package org.junit does not exist
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[14,1] static import only from classes and interfaces
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[16,2] cannot find symbol
+  symbol: class SpringBootTest
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[16,84] package SpringBootTest does not exist
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[24,6] cannot find symbol
+  symbol:   class BeforeEach
+  location: class pl.pandait.panda.PandaApplicationSeleniumTest
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[43,6] cannot find symbol
+  symbol:   class Test
+  location: class pl.pandait.panda.PandaApplicationSeleniumTest
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[51,6] cannot find symbol
+  symbol:   class Test
+  location: class pl.pandait.panda.PandaApplicationSeleniumTest
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[62,6] cannot find symbol
+  symbol:   class AfterEach
+  location: class pl.pandait.panda.PandaApplicationSeleniumTest
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[48,9] cannot find symbol
+  symbol:   method assertEquals(java.lang.String,java.lang.String)
+  location: class pl.pandait.panda.PandaApplicationSeleniumTest
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[59,9] cannot find symbol
+  symbol:   method assertEquals(java.lang.String,java.lang.String)
+  location: class pl.pandait.panda.PandaApplicationSeleniumTest
+[INFO] 14 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.687 s
+[INFO] Finished at: 2021-06-14T13:21:20Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project panda: Compilation failure: Compilation failure: 
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[3,29] package org.junit.jupiter.api does not exist
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[4,29] package org.junit.jupiter.api does not exist
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[5,29] package org.junit.jupiter.api does not exist
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[11,45] package org.springframework.boot.test.context does not exist
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[14,24] package org.junit does not exist
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[14,1] static import only from classes and interfaces
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[16,2] cannot find symbol
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   symbol: class SpringBootTest
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[16,84] package SpringBootTest does not exist
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[24,6] cannot find symbol
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   symbol:   class BeforeEach
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   location: class pl.pandait.panda.PandaApplicationSeleniumTest
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[43,6] cannot find symbol
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   symbol:   class Test
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   location: class pl.pandait.panda.PandaApplicationSeleniumTest
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[51,6] cannot find symbol
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   symbol:   class Test
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   location: class pl.pandait.panda.PandaApplicationSeleniumTest
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[62,6] cannot find symbol
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   symbol:   class AfterEach
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   location: class pl.pandait.panda.PandaApplicationSeleniumTest
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[48,9] cannot find symbol
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   symbol:   method assertEquals(java.lang.String,java.lang.String)
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   location: class pl.pandait.panda.PandaApplicationSeleniumTest
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/main/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[59,9] cannot find symbol
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   symbol:   method assertEquals(java.lang.String,java.lang.String)
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   location: class pl.pandait.panda.PandaApplicationSeleniumTest
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] -> [Help 1]
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4FOoIv4mZnPbuN/RqpVCI9jgdz66kWsqCu5Cj1BacEvcAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,3 @@
+[filesystem "AdoptOpenJDK|11.0.11|/dev/mapper/vagrant--vg-root"]
+	timestampResolution = 5000 nanoseconds
+	minRacyThreshold = 8581 microseconds

@@ -11,9 +11,6 @@ configVersion: 1
 ## SHARED CONFIGURATIONS
 ## A shared section for keys across all services in this config
 shared:
-    ## Extra Java options to pass to the JVM. These values add to or override the defaults.
-    #extraJavaOpts: "-Xms512m -Xmx2g"
-
     ## Security Configuration
     security:
     ## Join key value for joining the cluster (takes precedence over 'joinKeyFile')
