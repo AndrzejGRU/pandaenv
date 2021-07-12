@@ -1,0 +1,51 @@
+2021-07-10T17:59:44.577Z [jfrt ] [INFO ] [                ] [ectedEntitiesStreamObserver:35] [Stream_1625148041231] - publishing full invalidation and attempting to resubscribe to affected permissions changes
+2021-07-10T17:59:45.131Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:32] [Stream_1625148036972] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2021-07-10T17:59:46.599Z [jfrt ] [WARN ] [                ] [.j.a.c.g.GrpcStreamObserver:88] [default-executor-284] - refreshing affected permissions stream - target server is unavailable
+2021-07-10T17:59:46.602Z [jfrt ] [WARN ] [                ] [.j.a.c.g.GrpcStreamObserver:88] [default-executor-286] - refreshing affected platform config stream - target server is unavailable
+2021-07-10T17:59:46.600Z [jfrt ] [WARN ] [                ] [.j.a.c.g.GrpcStreamObserver:88] [default-executor-275] - refreshing affected platform config stream - target server is unavailable
+2021-07-10T17:59:46.603Z [jfrt ] [WARN ] [                ] [.j.a.c.g.GrpcStreamObserver:88] [default-executor-279] - refreshing affected permissions stream - target server is unavailable
+2021-07-10T17:59:46.857Z [jfrt ] [INFO ] [5a9132b2cbbb5e25] [.s.d.b.s.BinaryServiceImpl:670] [art-exec-23         ] - Triggering Garbage Collection
+2021-07-10T17:59:46.858Z [jfrt ] [INFO ] [5a9132b2cbbb5e25] [.s.d.b.s.g.GarbageCollector:66] [art-exec-23         ] - Starting GC strategy 'TRASH_AND_BINARIES'
+2021-07-10T17:59:46.860Z [jfrt ] [INFO ] [1bcdeaed113c1b83] [tegrationCleanupServiceImpl:44] [art-exec-21         ] - cleaning jobs table
+2021-07-10T17:59:46.861Z [jfrt ] [INFO ] [1010cf86035714cb] [ualCacheCleanupServiceImpl:119] [art-exec-13         ] - Starting cleanup of virtual repositories cache
+2021-07-10T17:59:46.862Z [jfrt ] [INFO ] [1010cf86035714cb] [ualCacheCleanupServiceImpl:127] [art-exec-13         ] - Completed virtual repositories cleanup: removed 0 cached files.
+2021-07-10T17:59:46.967Z [jfrt ] [INFO ] [                ] [ectedEntitiesStreamObserver:35] [Stream_1625148041231] - publishing full invalidation and attempting to resubscribe to affected permissions changes
+2021-07-10T17:59:46.984Z [jfrt ] [INFO ] [1bcdeaed113c1b83] [tegrationCleanupServiceImpl:48] [art-exec-21         ] - cleaned up 0 old job records
+2021-07-10T17:59:47.086Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:32] [Stream_1625148036972] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2021-07-10T17:59:46.882Z [jfrt ] [INFO ] [5a9132b2cbbb5e25] [.s.d.b.s.g.GarbageCollector:68] [art-exec-23         ] - Finished GC Strategy 'TRASH_AND_BINARIES'
+2021-07-10T17:59:57.973Z [jfrt ] [ERROR] [a9ea74e785f96b2e] [o.a.m.s.CallHomeService:136   ] [art-exec-17         ] - Failed calling home: api.bintray.com: Temporary failure in name resolution
+java.net.UnknownHostException: api.bintray.com: Temporary failure in name resolution
+	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1519)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.jfrog.client.http.CloseableHttpClientDecorator.doExecute(CloseableHttpClientDecorator.java:109)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.artifactory.metrics.services.CallHomeService.callHome(CallHomeService.java:131)
+	at org.artifactory.metrics.services.CallHomeService$$FastClassBySpringCGLIB$$1d14b447.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.artifactory.schedule.aop.TraceableMethodInvocation.proceed(TraceableMethodInvocation.java:72)
+	at org.artifactory.schedule.aop.AsyncAdvice.doInvoke(AsyncAdvice.java:334)
+	at org.artifactory.schedule.aop.AsyncAdvice.lambda$submit$2(AsyncAdvice.java:285)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.artifactory.opentracing.TraceableRunnableDecorator.run(TraceableRunnableDecorator.java:40)
+	at org.artifactory.concurrent.ArtifactoryRunnable.run(ArtifactoryRunnable.java:53)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)

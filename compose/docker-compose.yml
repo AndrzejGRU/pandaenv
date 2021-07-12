@@ -16,6 +16,9 @@ services:
       depends_on:
         - jenkins
       container_name: ubuntucompose
+      environment:
+        - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+        - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
       build: 
         context: ../dockerfiles/slave/
       command: java -jar agent.jar -jnlpUrl http://192.168.44.44:8880/computer/Slave/jenkins-agent.jnlp -secret 27cf6ad4fc4b3fff51f9cf96061dbee59824eac288c2a7547523b4afa9eba02d -workDir "/home/"

@@ -1,0 +1,10 @@
+commit 5fe5baab92ef2c863bf2303f6a42299484cda365
+tree 49b82f7004797934669e8f9cb448d2685f6b2dd9
+parent f39116de9c8c0f48c624b7c8f4ebe42e0aafbb43
+author Andrzej <andrzej.grudniak@gmail.com> 2021-06-23 17:33:12 +0000
+committer Andrzej <andrzej.grudniak@gmail.com> 2021-06-23 17:33:12 +0000
+
+    55
+
+
+:100644 100644 c29ff9d220c3df56c72ee31ac8b66ec8277e894d 58742d143551daba2b3922cafc57806dee41bb0b M	Dockerfile

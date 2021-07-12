@@ -1,0 +1,10 @@
+commit f39116de9c8c0f48c624b7c8f4ebe42e0aafbb43
+tree f754eeed1a019412774dc3980338a33c34a2282a
+parent 719a4fba1e2acab77a0369d9fb52e7c50d5e3d4d
+author Andrzej <andrzej.grudniak@gmail.com> 2021-06-23 17:26:46 +0000
+committer Andrzej <andrzej.grudniak@gmail.com> 2021-06-23 17:26:46 +0000
+
+    44
+
+
+:100644 100644 137cdb61121f1e6a4ffdd37801c9caf087b44a87 0feec5a79b620c6045af2a15342e96fcf54dd0c4 M	src/test/java/pl/pandait/panda/PandaApplicationSeleniumTest.java

@@ -1,0 +1,93 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.40">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.8.4"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.8.4">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.92">
+    <script>pipeline {
+    agent 
+    {label &apos;Slave&apos;}
+
+    tools {
+        // Install the Maven version configured as &quot;M3&quot; and add it to the path.
+        maven &quot;m3&quot;
+    }
+    environment {
+        IMAGE = readMavenPom().getArtifactId()
+        VERSION = readMavenPom().getVersion()
+}
+    stages {
+        stage(&apos;Clear running apps&apos;) {
+            steps {
+                // clear running dockers from last session
+                sh &apos;docker rm -f pandaapp || true&apos;
+                
+
+            }
+            }
+        stage(&apos;Get code&apos;) {
+            steps {
+                // Get some code from a GitHub repository
+                git branch: &apos;pipeline&apos;, url: &apos;https://github.com/AndrzejGRU/panda_application.git&apos;
+                
+
+            }
+            }
+        stage(&apos;Build and Junit&apos;) {
+            steps {
+                sh &apos;mvn clean install&apos;
+
+            }
+            }
+        stage(&apos;Build Docker Image&apos;) {
+            steps {
+                sh &quot;mvn package -Pdocker -Dmaven.test.skip=true&quot;
+
+            }
+            }
+        stage(&apos;Run Docker App based on image&apos;) {
+            steps {
+                sh &quot;docker run -d -p 0.0.0.0:8080:8080 --name pandaapp -t ${IMAGE}:${VERSION}&quot;
+
+            }
+            }
+        stage(&apos;test Selenium&apos;) {
+            steps {
+                sh &apos;mvn test -Pselenium&apos;
+
+            }
+        }
+        stage(&apos;Deploy to arti&apos;) {
+            steps {
+                configFileProvider([configFile(fileId: &apos;c935b131-4ff0-4597-8070-890126ba51c4&apos;, variable: &apos;mavensettings&apos;)]) {
+                sh &apos;mvn -s $mavensettings deploy -Dmaven.test.skip=true -e&apos; 
+            }
+            
+        }   
+            }
+        post {
+         always { 
+            sh &apos;docker stop pandaapp&apos;
+            deleteDir()
+            }
+    
+        }
+}   
+        
+    
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
